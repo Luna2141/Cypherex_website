@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="styles.css" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap" rel="stylesheet"> <!-- Load the font -->
     <title>Cypherex</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Background color */
+        }
+        canvas {
+            background: transparent; /* Ensure canvas is transparent */
+        }
+        .main {
+            position: relative; /* Ensure positioning for overlapping elements */
+        }
+    </style>
 </head>
 <body>
     <div class="main">
         <div class="overlap-group-wrapper">
             <div class="overlap-group">
-                <div class="main-content"> <div class="text-wrapper">Cypherex</div></div>
-                <div class="div-wrapper"><p class="div">A New Way to Secure</p></div>
-                <div class="main-content-2"><div class="text-wrapper-2">Coming Soon</div></div>
+                <div class="main-content">
+                    <!-- Canvas for text rendering with inner shadow -->
+                    <canvas id="textCanvas" width="800" height="300"></canvas>
+                </div>
+                <div class="div-wrapper">
+                    <p class="div">A New Way to Secure</p>
+                </div>
+                <div class="main-content-2">
+                    <div class="text-wrapper-2">Coming Soon</div>
+                </div>
                 <div class="options">
                     <div class="contact-us"><div class="text-wrapper-3">Contact Us</div></div>
                     <div class="github"><div class="text-wrapper-3">Github</div></div>
@@ -21,6 +45,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
-

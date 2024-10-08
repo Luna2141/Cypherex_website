@@ -1,9 +1,19 @@
 @font-face {
-    font-family: 'Sora';
-    src: url('../fonts/Sora-Regular.woff2') format('woff2'),
-         url('../fonts/Sora-Regular.woff') format('woff'),
-         url('../fonts/Sora-Regular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Sora-ExtraLight';
+    src: url('../fonts/Sora-ExtraLight.woff2') format('woff2'),
+         url('../fonts/Sora-ExtraLight.woff') format('woff'),
+         url('../fonts/Sora-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sora-Light';
+    src: url('../fonts/Sora-Light.woff2') format('woff2'),
+         url('../fonts/Sora-Light.woff') format('woff'),
+         url('../fonts/Sora-Light.ttf') format('truetype');
+    font-weight: 300;
     font-display: swap;
     font-style: normal;
 }
@@ -30,26 +40,11 @@
 
 .main .main-content {
     position: absolute;
-    width: 614px;
+    width: 612px;
     height: 161px;
+    flex-shrink: 0;
     top: 250px;
     left: 414px;
-}
-
-.main .text-wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: Sora;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    background: linear-gradient(90deg, #F6BCFF 0%, #FF9EFB 33.33%, #AE9AFF 66.67%, #B1D0FF 100%);
-    text-shadow: 0px 6px 3px rgba(0, 0, 0, 0.25);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .main .div-wrapper {
@@ -64,7 +59,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-family: Sora;
+    font-family: Sora-ExtraLight;
     font-size: 48px;
     font-style: normal;
     font-weight: 200;
@@ -88,7 +83,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-family: Sora;
+    font-family: Sora-ExtraLight;
     font-size: 64px;
     font-style: normal;
     font-weight: 200;
