@@ -7,7 +7,7 @@ export default function BuiltOnBase() {
       <div className="container mx-auto px-4">
         <ArrowDivider />
 
-        <div className="max-w-7xl mx-auto my-20 relative">
+        <div className="max-w-7xl mx-auto mt-20 relative">
           <div>
             <h2 className="text-9xl font-light text-center mb-8 text-black underline decoration-2 underline-offset-8">
               Built On
