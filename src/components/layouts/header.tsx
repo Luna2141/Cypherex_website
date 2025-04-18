@@ -35,18 +35,20 @@ export default function Header() {
         }`}
       >
         <nav className="flex justify-between items-center">
-          <Link
-            href="/"
-            className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent"
-          >
-            Cypherex
-          </Link>
+          <div className="w-1/4">
+            <Link
+              href="/"
+              className="text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent"
+            >
+              Cypherex
+            </Link>
+          </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-8 xl:space-x-16 2xl:space-x-40">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden lg:flex justify-center space-x-8 xl:space-x-16 2xl:space-x-24 w-1/2">
             <Link
               href="/contact"
-              className="text-lg xl:text-2xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+              className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Contact Us
             </Link>
@@ -54,19 +56,22 @@ export default function Header() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg xl:text-2xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+              className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Github
             </Link>
             <Link
               href="/docs"
-              className="text-lg xl:text-2xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+              className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Documentation
             </Link>
+          </div>
+
+          <div className="hidden lg:block w-1/4 text-right">
             <Link
               href="/coming-soon"
-              className="text-lg xl:text-2xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+              className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Coming Soon
             </Link>
@@ -102,9 +107,7 @@ export default function Header() {
 
         {/* Mobile Navigation with Animation */}
         <div
-          className={`lg:hidden fixed left-0 right-0 top-[${
-            isScrolled ? "48px" : "80px sm:96px md:112px lg:160px"
-          }] bg-white bg-opacity-95 shadow-lg transition-all duration-500 ease-in-out overflow-hidden ${
+          className={`lg:hidden fixed left-0 right-0 bg-white bg-opacity-95 shadow-lg transition-all duration-500 ease-in-out overflow-hidden ${
             isMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
           }`}
           style={{
@@ -114,7 +117,7 @@ export default function Header() {
           <div className="py-4 px-4 space-y-4">
             <Link
               href="/contact"
-              className="block py-2 text-xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
@@ -123,21 +126,21 @@ export default function Header() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block py-2 text-xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Github
             </Link>
             <Link
               href="/docs"
-              className="block py-2 text-xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Documentation
             </Link>
             <Link
               href="/coming-soon"
-              className="block py-2 text-xl bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Coming Soon
