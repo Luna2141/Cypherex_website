@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FeaturesFaq() {
   return (
-    <div className="w-full relative py-20">
+    <div className="w-full relative py-10 sm:py-16 md:py-20">
       {/* Gradient background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -14,30 +14,36 @@ export default function FeaturesFaq() {
         />
       </div>
 
-      <div className="absolute top-0 w-full h-fit z-0 pointer-events-none select-none">
-        <img src="/images/wave-line2.png" alt="Wavy line" className="top-0" />
+      <div className="absolute top-0 w-full z-0 pointer-events-none select-none">
+        <div className="relative w-full">
+          <img
+            src="/images/wave-line2.svg"
+            alt="Wavy line"
+            className="w-full h-auto object-contain max-w-full"
+          />
+        </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 mt-96">
+      <div className="container mx-auto px-4 relative z-10 mt-32 sm:mt-48 md:mt-64 lg:mt-96">
         <div className="mx-auto">
-          <h2 className="text-4xl md:text-6xl font-thin text-center mb-24 text-black underline decoration-2 underline-offset-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-thin text-center mb-8 sm:mb-12 md:mb-16 lg:mb-24 text-black underline decoration-2 underline-offset-8">
             Minimalist by Design. Powerful by Default.
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
             {/* Left side - Purple spiral */}
-            <div className="flex justify-start">
+            <div className="flex justify-center md:justify-start">
               <Image
                 src="/images/purple-flower.png"
                 alt="Purple spiral"
                 width={400}
                 height={400}
-                className="object-contain"
+                className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] h-auto object-contain"
               />
             </div>
 
             {/* Right side - Features */}
-            <div className="space-y-12 text-4xl mt-24">
+            <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12 text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-8 sm:mt-12 md:mt-16 lg:mt-24">
               <div>
                 <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                   Simple UI -
@@ -72,37 +78,37 @@ export default function FeaturesFaq() {
           </div>
 
           {/* FAQ Section */}
-          <div className="mb-24 max-w-6xl mx-auto">
-            <h2 className="text-6xl font-medium mb-24 text-black underline decoration-2 underline-offset-8">
+          <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-8 sm:mb-12 md:mb-16 lg:mb-24 text-black underline decoration-2 underline-offset-8">
               FAQ
             </h2>
 
-            <div className="space-y-32">
+            <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-32">
               <div>
-                <h3 className="text-5xl font-medium mb-4 text-black underline decoration-2 underline-offset-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-3 md:mb-4 text-black underline decoration-2 underline-offset-8">
                   How is my Data secured?
                 </h3>
-                <p className="text-4xl font-light text-black">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black">
                   Data is secured through ZK rollups and standardized Encryption
                   methods.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-5xl font-medium mb-4 text-black underline decoration-2 underline-offset-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-3 md:mb-4 text-black underline decoration-2 underline-offset-8">
                   Can I remove Passwords?
                 </h3>
-                <p className="text-4xl font-light text-black">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black">
                   All Login Information can be removed within the application
                   software.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-5xl font-medium mb-4 text-black underline decoration-2 underline-offset-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-3 md:mb-4 text-black underline decoration-2 underline-offset-8">
                   What platforms are supported?
                 </h3>
-                <p className="text-4xl font-light text-black">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black">
                   Currently we are supporting only desktop and laptop browsers
                   with plans of adding mobile support in the future.
                 </p>
