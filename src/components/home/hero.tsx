@@ -1,8 +1,10 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="mx-48 relative overflow-hidden h-screen">
+    <div className="relative overflow-hidden min-h-screen mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-48">
       {/* SVG Background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none select-none">
         <Image
@@ -10,13 +12,13 @@ export default function Hero() {
           alt="Background"
           fill
           priority
-          style={{ objectFit: "cover" }}
+          className="object-cover"
         />
       </div>
 
-      <div className="container mx-auto px-4 py-32 text-center relative z-10">
+      <div className="container mx-auto px-4 py-16 md:py-24 lg:py-32 text-center relative z-10 flex flex-col justify-center items-center h-full">
         <h1
-          className="text-7xl md:text-9xl font-light mb-4"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light mb-4 animate-fade-in"
           style={{
             background:
               "linear-gradient(to right, #F6BCFF 0%, #FF9EFB 33%, #AE9AFF 67%, #B1D0FF 100%)",
@@ -30,7 +32,7 @@ export default function Hero() {
           Cypherex
         </h1>
         <p
-          className="text-2xl md:text-5xl font-light pt-14"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light pt-4 sm:pt-8 md:pt-14 animate-fade-in-delay-300"
           style={{
             background:
               "linear-gradient(to right, #F6BCFF 0%, #FF9EFB 33%, #AE9AFF 67%, #B1D0FF 100%)",
