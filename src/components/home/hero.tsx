@@ -1,15 +1,11 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <div className="mx-48 relative overflow-hidden h-screen">
       {/* SVG Background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none select-none">
-        <Image
+        <img
           src="/images/hero-background.svg"
           alt="Background"
-          fill
-          priority
           style={{ objectFit: "cover" }}
         />
       </div>
