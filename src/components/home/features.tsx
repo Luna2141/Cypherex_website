@@ -65,7 +65,7 @@ export default function Features() {
         <div className="mt-16 sm:mt-24 md:mt-32">
           <div className="mx-auto pointer-events-none select-none">
             <Image
-              src="/images/feature-image.png"
+              src="/images/feature-image.webp"
               alt="Web3 Password Management Process"
               width={1200}
               height={800}

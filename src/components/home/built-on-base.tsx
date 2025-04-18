@@ -13,7 +13,7 @@ export default function BuiltOnBase() {
               Built On
             </h2>
 
-            <div className="flex justify-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+            <div className="flex justify-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 pointer-events-none select-none">
               <Image
                 src="/images/base-logo.png"
                 alt="BASE logo"
@@ -51,7 +51,7 @@ export default function BuiltOnBase() {
             </div>
 
             {/* Second column: Spiral image */}
-            <div className="flex justify-center order-1 md:order-2 mb-8 md:mb-0">
+            <div className="flex justify-center order-1 md:order-2 mb-8 md:mb-0 pointer-events-none select-none">
               <Image
                 src="/images/base-spiral.png"
                 alt="Base spiral"

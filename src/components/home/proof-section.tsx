@@ -4,9 +4,9 @@ import ArrowDivider from "./arrow-divider";
 export default function ProofSection() {
   return (
     <div className="w-full relative">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <Image
-          src="/images/lower-grid.png"
+          src="/images/lower-grid.webp"
           alt="Grid background"
           fill
           style={{ objectFit: "cover" }}

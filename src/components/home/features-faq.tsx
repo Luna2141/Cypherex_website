@@ -3,10 +3,9 @@ import Image from "next/image";
 export default function FeaturesFaq() {
   return (
     <div className="w-full relative py-10 sm:py-16 md:py-20">
-      {/* Gradient background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <Image
-          src="/images/gradient-background.png"
+          src="/images/gradient-background.webp"
           alt="Gradient background"
           fill
           style={{ objectFit: "cover" }}
@@ -31,8 +30,7 @@ export default function FeaturesFaq() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-            {/* Left side - Purple spiral */}
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start pointer-events-none select-none">
               <Image
                 src="/images/purple-flower.png"
                 alt="Purple spiral"
