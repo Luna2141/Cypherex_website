@@ -3,17 +3,10 @@ import Image from "next/image";
 export default function Features() {
   return (
     <div className="relative w-full py-20 bg-white">
-      {/* Wavy line visualization using the SVG from public folder */}
-      <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src="/images/wave-line.svg"
-          alt="Wavy line"
-          fill
-          style={{ objectFit: "contain" }}
-          className="top-0"
-          priority
-        />
+      <div className="absolute top-1/10 w-full h-fit z-0">
+        <img src="/images/wave-line.svg" alt="Wavy line" className="top-0" />
       </div>
+
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl md:text-7xl font-thin text-center mb-96 text-black">
           Passwords are a Pain. We're the Cure.
@@ -54,6 +47,18 @@ export default function Features() {
                 data.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="mt-32 mb-16">
+          <div className="mx-auto">
+            <img
+              src="/images/feature-image.png"
+              alt="Web3 Password Management Process"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
