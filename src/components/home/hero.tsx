@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Hero() {
@@ -16,7 +18,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 py-16 md:py-24 lg:py-32 text-center relative z-10 flex flex-col justify-center items-center h-full">
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light mb-4"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light mb-4 animate-fade-in"
           style={{
             background:
               "linear-gradient(to right, #F6BCFF 0%, #FF9EFB 33%, #AE9AFF 67%, #B1D0FF 100%)",
@@ -30,7 +32,7 @@ export default function Hero() {
           Cypherex
         </h1>
         <p
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light pt-4 sm:pt-8 md:pt-14"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light pt-4 sm:pt-8 md:pt-14 animate-fade-in-delay-300"
           style={{
             background:
               "linear-gradient(to right, #F6BCFF 0%, #FF9EFB 33%, #AE9AFF 67%, #B1D0FF 100%)",
