@@ -15,7 +15,7 @@ export default function ProofSection() {
     <div className="w-full relative">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/lower-grid.png"
+          src="/images/lower-grid.webp"
           alt="Grid background"
           fill
           style={{ objectFit: "cover" }}

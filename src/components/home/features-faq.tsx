@@ -19,7 +19,7 @@ export default function FeaturesFaq() {
       {/* Gradient background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/gradient-background.png"
+          src="/images/gradient-background.webp"
           alt="Gradient background"
           fill
           style={{ objectFit: "cover" }}
