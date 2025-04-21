@@ -92,7 +92,7 @@ export default function FeaturesFaq() {
               >
                 <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                   Easy Onboarding -
-                  <span className="font-normal text-black">
+                  <span className="font-light text-black">
                     {" "}
                     Utilizing Ethereum to bring easy access security to
                     everyone.
@@ -108,7 +108,7 @@ export default function FeaturesFaq() {
               >
                 <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                   Feels Like Magic -
-                  <span className="font-normal text-black">
+                  <span className="font-light text-black">
                     {" "}
                     Have a Web2 Experience on a Web3 Product.
                   </span>
