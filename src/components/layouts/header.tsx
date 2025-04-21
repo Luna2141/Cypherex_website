@@ -46,12 +46,14 @@ export default function Header() {
 
           {/* Desktop Navigation - Centered */}
           <div className="hidden lg:flex justify-center space-x-8 xl:space-x-16 2xl:space-x-24 w-1/2">
+            {/* TODO: Add Contact Us link below */}
             <Link
-              href="/contact"
+              href="" // e.g., "/contact"
               className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Contact Us
             </Link>
+
             <Link
               href="https://github.com"
               target="_blank"
@@ -60,8 +62,10 @@ export default function Header() {
             >
               Github
             </Link>
+
+            {/* TODO: Add Documentation link below */}
             <Link
-              href="/docs"
+              href="" // e.g., "/docs"
               className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Documentation
@@ -69,8 +73,9 @@ export default function Header() {
           </div>
 
           <div className="hidden lg:block w-1/4 text-right">
+            {/* TODO: Add Coming Soon page link below */}
             <Link
-              href="/coming-soon"
+              href="" // e.g., "/coming-soon"
               className="text-lg xl:text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Coming Soon
@@ -115,15 +120,17 @@ export default function Header() {
           }}
         >
           <div className="py-4 px-4 space-y-4">
+            {/* TODO: Add Contact Us link below */}
             <Link
-              href="/contact"
+              href="" // e.g., "/contact"
               className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
             </Link>
+
             <Link
-              href="https://github.com"
+              href="https://github.com/Luna2141"
               target="_blank"
               rel="noopener noreferrer"
               className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
@@ -131,15 +138,19 @@ export default function Header() {
             >
               Github
             </Link>
+
+            {/* TODO: Add Documentation link below */}
             <Link
-              href="/docs"
+              href="" // e.g., "/docs"
               className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Documentation
             </Link>
+
+            {/* TODO: Add Coming Soon page link below */}
             <Link
-              href="/coming-soon"
+              href="" // e.g., "/coming-soon"
               className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
