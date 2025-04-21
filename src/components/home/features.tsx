@@ -14,7 +14,7 @@ export default function Features() {
   return (
     <div className="relative w-full py-10 sm:py-16 md:py-20 bg-white">
       {/* Wavy line visualization using SVG */}
-      <div className="absolute top-[10%] w-full z-0 pointer-events-none select-none">
+      <div className="absolute top-[15%] xl:top-[10%] w-full z-0 pointer-events-none select-none">
         <div className="relative w-full">
           <img
             src="/images/wave-line.svg"
@@ -43,7 +43,7 @@ export default function Features() {
               headingAnimation.isVisible ? "is-visible" : ""
             }`}
           >
-            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 border-b border-gray-200 pb-2 text-black underline decoration-2 underline-offset-8">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 pb-2 text-black underline decoration-2 underline-offset-8">
               Web3 Password Management Made Simple.
             </h3>
           </div>
@@ -57,7 +57,7 @@ export default function Features() {
             >
               <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                 Fully On-Chain Storage -
-                <span className="text-gray-700 underline decoration-2 underline-offset-8">
+                <span className="font-light text-gray-700 underline decoration-2 underline-offset-8">
                   {" "}
                   No centralized vaults, no compromises.
                 </span>
@@ -72,7 +72,7 @@ export default function Features() {
             >
               <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                 Bulk Uploads -
-                <span className="text-gray-700 underline decoration-2 underline-offset-8">
+                <span className="font-light text-gray-700 underline decoration-2 underline-offset-8">
                   {" "}
                   Save time and reduce gas fees.
                 </span>
@@ -87,7 +87,7 @@ export default function Features() {
             >
               <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                 ZK Rollup Security -
-                <span className="text-gray-700 underline decoration-2 underline-offset-8">
+                <span className="font-light text-gray-700 underline decoration-2 underline-offset-8">
                   {" "}
                   Top-tier privacy and on-chain proof, without leaking sensitive
                   data.
