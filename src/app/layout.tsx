@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Analytics />
         <div className="flex flex-col min-h-screen bg-white">
           <Header />
           <main className="flex-grow">{children}</main>
