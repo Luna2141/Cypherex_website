@@ -58,7 +58,7 @@ export default function ProofSection() {
                 }`}
             >
               <p className="font-light mb-1 text-black underline decoration-2 underline-offset-8">
-                Seaked -
+                Sealed -
                 <span className="font-thin text-black underline decoration-2 underline-offset-8">
                   {" "}
                   Your vault is encrypted on your device. We only ever see ciphertext.

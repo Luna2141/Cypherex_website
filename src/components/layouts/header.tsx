@@ -67,80 +67,66 @@ export default function Header() {
           </div>
 
           <div className="hidden lg:block w-1/4" />
-      </div>
+        </nav>
 
-      {/* Custom Hamburger Menu Button */}
-      <div
-        className="w-[40px] h-[40px] flex flex-col justify-center items-center cursor-pointer lg:hidden transition-all duration-300 z-50"
-        onClick={() => setIsMenuOpen((prev) => !prev)}
-        aria-label="Toggle menu"
-      >
+        {/* Custom Hamburger Menu Button */}
         <div
-          className={`bg-purple-500 w-[18px] h-[2px] transition-all duration-300 ${isMenuOpen
-            ? "-rotate-45 translate-y-[8px] delay-200"
-            : "rotate-0 translate-y-0"
-            }`}
-        ></div>
+          className="w-[40px] h-[40px] flex flex-col justify-center items-center cursor-pointer lg:hidden transition-all duration-300 z-50"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+        >
+          <div
+            className={`bg-purple-500 w-[18px] h-[2px] transition-all duration-300 ${isMenuOpen
+              ? "-rotate-45 translate-y-[8px] delay-200"
+              : "rotate-0 translate-y-0"
+              }`}
+          ></div>
+          <div
+            className={`bg-purple-500 h-[2px] flex justify-center items-center my-[6px] transition-all duration-300 ${isMenuOpen ? "w-0" : "w-[18px] delay-300"
+              }`}
+          ></div>
+          <div
+            className={`bg-purple-500 w-[18px] h-[2px] transition-all duration-300 ${isMenuOpen
+              ? "rotate-45 -translate-y-[8px] delay-200"
+              : "rotate-0 translate-y-0"
+              }`}
+          ></div>
+        </div>
+
+        {/* Mobile Navigation with Animation */}
         <div
-          className={`bg-purple-500 h-[2px] flex justify-center items-center my-[6px] transition-all duration-300 ${isMenuOpen ? "w-0" : "w-[18px] delay-300"
+          className={`lg:hidden fixed left-0 right-0 bg-white bg-opacity-95 shadow-lg transition-all duration-500 ease-in-out overflow-hidden ${isMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
             }`}
-        ></div>
-        <div
-          className={`bg-purple-500 w-[18px] h-[2px] transition-all duration-300 ${isMenuOpen
-            ? "rotate-45 -translate-y-[8px] delay-200"
-            : "rotate-0 translate-y-0"
-            }`}
-        ></div>
-      </div>
-    </nav>
+          style={{
+            top: isScrolled ? "48px" : "calc(4rem + 1rem)",
+          }}
+        >
+          <div className="py-4 px-4 space-y-4">
+            <Link
+              href="/contact" // e.g., "/contact"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact Us
+            </Link>
 
-        {/* Mobile Navigation with Animation */ }
-  <div
-    className={`lg:hidden fixed left-0 right-0 bg-white bg-opacity-95 shadow-lg transition-all duration-500 ease-in-out overflow-hidden ${isMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
-      }`}
-    style={{
-      top: isScrolled ? "48px" : "calc(4rem + 1rem)",
-    }}
-  >
-    <div className="py-4 px-4 space-y-4">
-      {/* TODO: Add Contact Us link below */}
-      <Link
-        href="" // e.g., "/contact"
-        className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        Contact Us
-      </Link>
+            <Link
+              href="/github"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Github
+            </Link>
 
-      <Link
-        href="https://github.com/Luna2141"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        Github
-      </Link>
-
-      {/* TODO: Add Documentation link below */}
-      <Link
-        href="" // e.g., "/docs"
-        className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        Documentation
-      </Link>
-
-      {/* TODO: Add Coming Soon page link below */}
-      <Link
-        href="" // e.g., "/coming-soon"
-        className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        Coming Soon
-      </Link>
-    </div>
-  </div>
+            <Link
+              href="/docs" // e.g., "/docs"
+              className="block py-2 text-xl font-light bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent hover:bg-gray-100 transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Documentation
+            </Link>
+          </div>
+        </div>
       </div >
     </header >
   );
