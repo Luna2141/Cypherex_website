@@ -1,4 +1,4 @@
-import BuiltOnBase from "@/components/home/built-on-base";
+import BuiltWith from "@/components/home/built-with";
 import Features from "@/components/home/features";
 import FeaturesFaq from "@/components/home/features-faq";
 import Hero from "@/components/home/hero";
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <ProofSection />
-      <BuiltOnBase />
+      <BuiltWith />
       <FeaturesFaq />
     </div>
   );

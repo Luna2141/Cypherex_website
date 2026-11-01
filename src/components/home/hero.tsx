@@ -45,6 +45,9 @@ export default function Hero() {
         >
           A new way to Secure
         </p>
+        <p className="mt-6 text-base sm:text-lg md:text-xl font-light text-purple-400 animate-fade-in-delay-600">
+          A local-first password manager. In development.
+        </p>
       </div>
     </div>
   );

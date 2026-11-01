@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Cypherex",
-  description: "Cypherex platform",
+  description: "A local-first password manager with hardware-key unlock and optional encrypted sync. In development.",
 };
 
 export default function RootLayout({
