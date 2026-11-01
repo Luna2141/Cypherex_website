@@ -41,9 +41,8 @@ export default function FeaturesFaq() {
         <div className="mx-auto">
           <div
             ref={titleAnimation.ref}
-            className={`animate-slide-up ${
-              titleAnimation.isVisible ? "is-visible" : ""
-            }`}
+            className={`animate-slide-up ${titleAnimation.isVisible ? "is-visible" : ""
+              }`}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-thin text-center mb-8 sm:mb-12 md:mb-16 lg:mb-24 text-black underline decoration-2 underline-offset-8">
               Minimalist by Design. Powerful by Default.
@@ -54,9 +53,8 @@ export default function FeaturesFaq() {
             {/* Left side - Purple spiral */}
             <div
               ref={flowerAnimation.ref}
-              className={`flex justify-center md:justify-start animate-slide-up ${
-                flowerAnimation.isVisible ? "is-visible" : ""
-              }`}
+              className={`flex justify-center md:justify-start animate-slide-up ${flowerAnimation.isVisible ? "is-visible" : ""
+                }`}
             >
               <Image
                 src="/images/purple-flower.png"
@@ -71,9 +69,8 @@ export default function FeaturesFaq() {
             <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12 text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-8 sm:mt-12 md:mt-16 lg:mt-24">
               <div
                 ref={feature1Animation.ref}
-                className={`animate-slide-up ${
-                  feature1Animation.isVisible ? "is-visible" : ""
-                }`}
+                className={`animate-slide-up ${feature1Animation.isVisible ? "is-visible" : ""
+                  }`}
               >
                 <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
                   Simple UI -
@@ -86,31 +83,28 @@ export default function FeaturesFaq() {
 
               <div
                 ref={feature2Animation.ref}
-                className={`animate-slide-up ${
-                  feature2Animation.isVisible ? "is-visible" : ""
-                }`}
+                className={`animate-slide-up ${feature2Animation.isVisible ? "is-visible" : ""
+                  }`}
               >
                 <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
-                  Easy Onboarding -
+                  Private Onboarding -
                   <span className="font-light text-black">
                     {" "}
-                    Utilizing Ethereum to bring easy access security to
-                    everyone.
+                    No email required. Accounts use a random account number.
                   </span>
                 </p>
               </div>
 
               <div
                 ref={feature3Animation.ref}
-                className={`animate-slide-up ${
-                  feature3Animation.isVisible ? "is-visible" : ""
-                }`}
+                className={`animate-slide-up ${feature3Animation.isVisible ? "is-visible" : ""
+                  }`}
               >
                 <p className="font-medium mb-2 text-black underline decoration-2 underline-offset-8">
-                  Feels Like Magic -
+                  Works Offline -
                   <span className="font-light text-black">
                     {" "}
-                    Have a Web2 Experience on a Web3 Product.
+                    Your vault opens without a connection. Sync is optional.
                   </span>
                 </p>
               </div>
@@ -121,9 +115,8 @@ export default function FeaturesFaq() {
           <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 max-w-6xl mx-auto">
             <div
               ref={faqTitleAnimation.ref}
-              className={`animate-slide-up ${
-                faqTitleAnimation.isVisible ? "is-visible" : ""
-              }`}
+              className={`animate-slide-up ${faqTitleAnimation.isVisible ? "is-visible" : ""
+                }`}
             >
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-8 sm:mb-12 md:mb-16 lg:mb-24 text-black underline decoration-2 underline-offset-8">
                 FAQ
@@ -133,46 +126,41 @@ export default function FeaturesFaq() {
             <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-32">
               <div
                 ref={faq1Animation.ref}
-                className={`animate-slide-up ${
-                  faq1Animation.isVisible ? "is-visible" : ""
-                }`}
+                className={`animate-slide-up ${faq1Animation.isVisible ? "is-visible" : ""
+                  }`}
               >
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-3 md:mb-4 text-black underline decoration-2 underline-offset-8">
                   How is my Data secured?
                 </h3>
                 <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black">
-                  Data is secured through ZK rollups and standardized Encryption
-                  methods.
+                  Your vault is encrypted on your device with XChaCha20-Poly1305 before anything leaves it, and the keys that open it never reach our servers.
+                  We can see basic account and sync information, like when you sync and how large your vault is, but not what's inside it.
                 </p>
               </div>
 
               <div
                 ref={faq2Animation.ref}
-                className={`animate-slide-up ${
-                  faq2Animation.isVisible ? "is-visible" : ""
-                }`}
+                className={`animate-slide-up ${faq2Animation.isVisible ? "is-visible" : ""
+                  }`}
               >
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-3 md:mb-4 text-black underline decoration-2 underline-offset-8">
-                  Can I remove Passwords?
+                  What if I forgot my passphrase?
                 </h3>
                 <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black">
-                  All Login Information can be removed within the application
-                  software.
+                  Use your recovery seed. We can't reset it for you, because we never knew it.
                 </p>
               </div>
 
               <div
                 ref={faq3Animation.ref}
-                className={`animate-slide-up ${
-                  faq3Animation.isVisible ? "is-visible" : ""
-                }`}
+                className={`animate-slide-up ${faq3Animation.isVisible ? "is-visible" : ""
+                  }`}
               >
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-3 md:mb-4 text-black underline decoration-2 underline-offset-8">
                   What platforms are supported?
                 </h3>
                 <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black">
-                  Currently we are supporting only desktop and laptop browsers
-                  with plans of adding mobile support in the future.
+                  Currently, only MacOS is supported with plans to support other desktop and mobile systems later on.
                 </p>
               </div>
             </div>

@@ -12,7 +12,7 @@ export default function Footer() {
             Contact Us
           </Link>
           <div className="text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-cyan-800 to-teal-600 bg-clip-text text-transparent">
-            Cypherex©
+            © {new Date().getFullYear()} Cypherex
           </div>
           <Link
             href="https://github.com"
